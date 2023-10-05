@@ -111,7 +111,6 @@ button {
     background-color: #596D48;
     color: white;
     border-radius: 10px;
-    border: none;
 }
 
 a {
@@ -120,3 +119,6 @@ a {
     font-weight: bold;
 }
 
+#error {
+    border: solid red 2px;
+}

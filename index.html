@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="background-image">
@@ -48,7 +49,8 @@
                         pattern="(\d{4})-?(\d{3})-?(\d{4})" placeholder="09123456789">
                 
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_password" id="confirm_password">    
+                        <input type="password" name="confirm_password" id="confirm_password"
+                        oninput="return confirm()">    
                     </div>
                 </div>
             </form>
