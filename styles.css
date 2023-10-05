@@ -122,9 +122,10 @@ a {
 
 #error {
     border: solid red 2px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, .2);
 }
 
-#error + span::after {
+#error + span::before {
     content: "*passwords do not match";
     color: red;
     font-size: .6em;
@@ -141,3 +142,11 @@ a {
     font-style: normal;
     }
 
+    .form-row input[type='text']:valid,
+    .form-row input[type='email']:valid,
+    .form-row input[type='tel']:valid,
+    .form-row input[type='password']:valid {
+        border: solid green 2px;
+        box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, .2);
+        outline: none;
+    } 
