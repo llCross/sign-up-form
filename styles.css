@@ -11,7 +11,7 @@ body {
 }
 
 .background-image {
-    background: url("bg-1.avif") no-repeat;
+    background: url("images/bg-1.avif") no-repeat;
     background-size: cover;
     width: 35vw;
     height: 100vh;
