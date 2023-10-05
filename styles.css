@@ -66,6 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .form-row input[type='text'],
@@ -123,6 +124,14 @@ a {
     border: solid red 2px;
 }
 
+#error + span::after {
+    content: "*passwords do not match";
+    color: red;
+    font-size: .6em;
+    position: absolute;
+    top: 230px;
+}
+
 @font-face {
     font-family: "norsebold";
     src: 
@@ -131,3 +140,4 @@ a {
     font-weight: normal;
     font-style: normal;
     }
+
